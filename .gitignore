@@ -1,0 +1,7 @@
+*.key
+private*
+*.conf
+!configs/*.template
+!configs/*.example
+*.pcap
+.env
