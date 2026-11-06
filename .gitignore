@@ -5,3 +5,4 @@ private*
 !configs/*.example
 *.pcap
 .env
+!nftables/*.conf

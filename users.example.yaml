@@ -1,0 +1,33 @@
+version: 1
+
+gateway:
+  interface: wg0
+  corporate_interface: enp0s8
+  corporate_network: 192.168.100.0/24
+
+groups:
+  accounting:
+    subnet: 10.200.10.0/24
+    access:
+      - destination: 192.168.100.10
+        protocol: tcp
+        port: 8081
+
+  management:
+    subnet: 10.200.20.0/24
+    access:
+      - destination: 192.168.100.10
+        protocol: tcp
+        port: 8082
+
+  it:
+    subnet: 10.200.30.0/24
+    access:
+      - destination: 192.168.100.0/24
+        protocol: any
+
+  guests:
+    subnet: 10.200.40.0/24
+    access: []
+
+users: []
