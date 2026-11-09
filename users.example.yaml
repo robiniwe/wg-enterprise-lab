@@ -30,4 +30,15 @@ groups:
     subnet: 10.200.40.0/24
     access: []
 
-users: []
+users:  
+  - name: cl-it
+    group: it
+    ip: 10.200.30.2
+
+  - name: cl-acc
+    group: accounting
+    ip: 10.200.10.2
+
+  - name: cl-mgr
+    group: management
+    ip: 10.200.20.2
